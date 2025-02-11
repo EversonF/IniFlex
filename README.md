@@ -3,21 +3,21 @@
 ### Classes e Atributos
 
 1. **Classe IniFlex.Pessoa**
-    - [ ] `nome` (String)
-    - [ ] `dataNascimento` (LocalDate)
+    - [x] `nome` (String)
+    - [x] `dataNascimento` (LocalDate)
 
 2. **Classe Funcionário (extends IniFlex.Pessoa)**
-    - [ ] `salario` (BigDecimal)
-    - [ ] `funcao` (String)
+    - [x] `salario` (BigDecimal)
+    - [x] `funcao` (String)
 
 ### Funcionalidades do Projeto
 
 3. **Classe Principal**
-    - [ ] 3.1 Inserir todos os funcionários na ordem original.
-    - [ ] 3.2 Remover o funcionário chamado "João" da lista.
-    - [ ] 3.3 Imprimir todos os funcionários com:
-        - [ ] Data no formato `dd/MM/yyyy`
-        - [ ] Salário formatado com separador de milhar como ponto e decimal como vírgula.
+    - [x] 3.1 Inserir todos os funcionários na ordem original.
+    - [x] 3.2 Remover o funcionário chamado "João" da lista.
+    - [x] 3.3 Imprimir todos os funcionários com:
+        - [x] Data no formato `dd/MM/yyyy`
+        - [x] Salário formatado com separador de milhar como ponto e decimal como vírgula.
     - [ ] 3.4 Aplicar aumento de 10% no salário de todos os funcionários.
     - [ ] 3.5 Agrupar os funcionários por função em um `Map<String, List<IniFlex.Funcionario>>`.
     - [ ] 3.6 Imprimir os funcionários agrupados por função.
