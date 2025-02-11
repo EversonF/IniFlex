@@ -2,6 +2,9 @@ package IniFlex;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class Funcionario extends Pessoa {
     private BigDecimal salario;
@@ -33,10 +36,20 @@ public class Funcionario extends Pessoa {
 
     @Override
     public String toString() {
-        return "IniFlex.Funcionario{" +
+        // Formata a data no padrão dd/MM/yyyy
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String dataFormatada = getDataNascimento().format(formatter);
+
+        // Formata o salário com separador de milhar e decimal
+        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        numberFormat.setMinimumFractionDigits(2);
+        numberFormat.setMaximumFractionDigits(2);
+        String salarioFormatado = numberFormat.format(salario);
+
+        return "Funcionario{" +
                 "nome='" + getNome() + '\'' +
-                ", dataNascimento=" + getDataNascimento() +
-                ", salario=" + salario +
+                ", dataNascimento=" + dataFormatada +
+                ", salario=" + salarioFormatado +
                 ", funcao='" + funcao + '\'' +
                 '}';
     }
