@@ -2,11 +2,11 @@
 
 ### Classes e Atributos
 
-1. **Classe Pessoa**
+1. **Classe IniFlex.Pessoa**
     - [ ] `nome` (String)
     - [ ] `dataNascimento` (LocalDate)
 
-2. **Classe Funcionário (extends Pessoa)**
+2. **Classe Funcionário (extends IniFlex.Pessoa)**
     - [ ] `salario` (BigDecimal)
     - [ ] `funcao` (String)
 
@@ -19,7 +19,7 @@
         - [ ] Data no formato `dd/MM/yyyy`
         - [ ] Salário formatado com separador de milhar como ponto e decimal como vírgula.
     - [ ] 3.4 Aplicar aumento de 10% no salário de todos os funcionários.
-    - [ ] 3.5 Agrupar os funcionários por função em um `Map<String, List<Funcionario>>`.
+    - [ ] 3.5 Agrupar os funcionários por função em um `Map<String, List<IniFlex.Funcionario>>`.
     - [ ] 3.6 Imprimir os funcionários agrupados por função.
     - [ ] 3.8 Exibir funcionários com aniversário nos meses 10 e 12.
     - [ ] 3.9 Identificar e imprimir o funcionário mais velho (nome e idade).
