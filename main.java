@@ -1,9 +1,9 @@
 package IniFlex;
 
 import  java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.*;
 import java.math.BigDecimal;
-import java.util.List;
+import java.util.stream.Collectors;
 
 public class main {
     public static void main(String[] args) {
@@ -24,6 +24,29 @@ public class main {
         System.out.println("Funcionarios após a remoção de João:");
         for (Funcionario funcionario : funcionarios) {
             System.out.println(funcionario);
+        }
+
+        System.out.println("\nAplicando aumento de 10% no salário dos funcionários:");
+        for (Funcionario funcionario : funcionarios) {
+            BigDecimal salarioAtual = funcionario.getSalario();
+            BigDecimal aumento = salarioAtual.multiply(new BigDecimal("0.10"));
+            funcionario.setSalario(salarioAtual.add(aumento));
+        }
+
+        System.out.println("\nFuncionarios após o aumento de 10%:");
+        for (Funcionario funcionario : funcionarios) {
+            System.out.println(funcionario);
+        }
+
+        Map<String, List<Funcionario>> funcionariosPorFuncao = funcionarios.stream()
+                .collect(Collectors.groupingBy(Funcionario::getFuncao));
+
+        System.out.println("\nFuncionários agrupados por função:");
+        for (Map.Entry<String, List<Funcionario>> entry : funcionariosPorFuncao.entrySet()) {
+            System.out.println(entry.getKey() + ":");
+            for (Funcionario funcionario : entry.getValue()) {
+                System.out.println("  " + funcionario);
+            }
         }
 
     }
