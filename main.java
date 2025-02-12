@@ -6,6 +6,7 @@ import java.time.Month;
 import java.time.Period;
 import java.util.*;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.stream.Collectors;
 
 public class main {
@@ -91,6 +92,20 @@ public class main {
         String totalSalariosFormatado = numberFormat.format(totalSalarios);
 
         System.out.println("Total: R$ " + totalSalariosFormatado);
+
+        System.out.println("\nQunatos salarios mininos cada funcionario ganha (salario minimo de R$ 1212,00):");
+        BigDecimal salarioMinino = new BigDecimal("1212.00");
+         for (Funcionario funcionario : funcionarios) {
+             BigDecimal salario = funcionario.getSalario();
+             BigDecimal salariosMinimos = salario.divide(salarioMinino, 2, RoundingMode.HALF_UP);
+
+             NumberFormat formatador = NumberFormat.getInstance(new Locale("pt", "BR"));
+             formatador.setMinimumFractionDigits(2);
+             formatador.setMaximumFractionDigits(2);
+             String salariosMinimosFormatado = formatador.format(salariosMinimos);
+
+             System.out.println(funcionario.getNome() + ": " + salariosMinimosFormatado + " salários mínimos");
+         }
     }
 
 
