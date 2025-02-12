@@ -1,3 +1,8 @@
+## 💻 Objetivos do projetos
+1. **Desenvolver um projeto Java para Gestão de Funcionários.**
+2. **Realizar operações como aumento de salárial, remoção de funcionários, agrupamento por função, e cáculos especificos (como salários mínino e total de salários)**
+3. **Exibir informações de forma organizada**
+--------------------------------------------
 ## Requisitos do Projeto Java - Gestão de Funcionários
 
 ### Classes e Atributos
@@ -32,9 +37,14 @@
 - Utilize a ferramenta de sua preferência (Eclipse, NetBeans, etc.).
 - Após concluir o desenvolvimento, exporte o projeto e compartilhe o link na etapa "Mão na Massa".
 - Após a entrega, será agendada uma entrevista técnica para avaliação.
-
+--------------------------------------------
+### 🔓  lincença
+Este projeto está sob a licença do MIT.
+--------------------------------------------
 ### 🛠 Tecnologias Ultizadas
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
 ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ_IDEA-000000?style=flat-square&logo=intellij-idea)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
-![SpringBoot](https://img.shields.io/badge/-SpringBoot-6DB33F?style=flat-square&logo=spring)
+--------------------------------------------
+### 🏁 Conclusão
+**Este projeto foi uma otima oportunidade para praticar e aprimorar meus conhecimentos em Java, me possibilitou o uso de diversas funcionalidades da linguagem e aprimorar minhas habilidades de programação.**
