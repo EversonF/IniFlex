@@ -1,7 +1,8 @@
 package IniFlex;
 
-import  java.time.LocalDate;
+import java.time.LocalDate;
 import java.time.Month;
+import java.time.Period;
 import java.util.*;
 import java.math.BigDecimal;
 import java.util.stream.Collectors;
@@ -60,6 +61,14 @@ public class main {
         for (Funcionario funcionario : aniversariantesOutubroDezembro) {
             System.out.println(funcionario);
         }
+
+        System.out.println(("\nFuncionario com a maior idade:"));
+        Funcionario funcionarioMaisVelho = funcionarios.stream()
+                .min(Comparator.comparing(Funcionario::getDataNascimento))
+                .orElseThrow(() -> new RuntimeException("Lista de funcionarios vazia"));
+        int idade = Period.between(funcionarioMaisVelho.getDataNascimento(), LocalDate.now()).getYears();
+
+        System.out.println("Nome: " + funcionarioMaisVelho.getNome() + ", Idade: " + idade + " anos");
 
     }
 
