@@ -1,5 +1,6 @@
 package IniFlex;
 
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
@@ -79,6 +80,17 @@ public class main {
             System.out.println(funcionario);
         }
 
+        System.out.println("\nTotal des salarios dos funcionarios:");
+        BigDecimal totalSalarios = funcionarios.stream()
+                .map(Funcionario::getSalario)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+
+        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        numberFormat.setMinimumFractionDigits(2);
+        numberFormat.setMinimumFractionDigits(2);
+        String totalSalariosFormatado = numberFormat.format(totalSalarios);
+
+        System.out.println("Total: R$ " + totalSalariosFormatado);
     }
 
 
