@@ -21,7 +21,7 @@
     - [x] 3.4 Aplicar aumento de 10% no salário de todos os funcionários.
     - [x] 3.5 Agrupar os funcionários por função em um `Map<String, List<IniFlex.Funcionario>>`.
     - [x] 3.6 Imprimir os funcionários agrupados por função.
-    - [ ] 3.8 Exibir funcionários com aniversário nos meses 10 e 12.
+    - [x] 3.8 Exibir funcionários com aniversário nos meses 10 e 12.
     - [ ] 3.9 Identificar e imprimir o funcionário mais velho (nome e idade).
     - [ ] 3.10 Ordenar e imprimir os funcionários em ordem alfabética.
     - [ ] 3.11 Calcular e imprimir o total dos salários dos funcionários.

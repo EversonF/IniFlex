@@ -1,6 +1,7 @@
 package IniFlex;
 
 import  java.time.LocalDate;
+import java.time.Month;
 import java.util.*;
 import java.math.BigDecimal;
 import java.util.stream.Collectors;
@@ -47,6 +48,17 @@ public class main {
             for (Funcionario funcionario : entry.getValue()) {
                 System.out.println("  " + funcionario);
             }
+        }
+        System.out.println("\nFuncionarios que fazem aniversario nos meses 10 e 12:");
+        List<Funcionario> aniversariantesOutubroDezembro = funcionarios.stream()
+                .filter(funcionario -> {
+                    Month mesNacimento = funcionario.getDataNascimento().getMonth();
+                    return mesNacimento == Month.OCTOBER || mesNacimento == Month.DECEMBER;
+                })
+                .collect(Collectors.toList());
+
+        for (Funcionario funcionario : aniversariantesOutubroDezembro) {
+            System.out.println(funcionario);
         }
 
     }
