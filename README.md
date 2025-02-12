@@ -39,7 +39,7 @@
 - Após a entrega, será agendada uma entrevista técnica para avaliação.
 --------------------------------------------
 ### 🔓  lincença
-Este projeto está sob a licença do MIT.
+**Este projeto está sob a licença do MIT.**
 --------------------------------------------
 ### 🛠 Tecnologias Ultizadas
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
