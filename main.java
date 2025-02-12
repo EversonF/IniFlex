@@ -70,6 +70,15 @@ public class main {
 
         System.out.println("Nome: " + funcionarioMaisVelho.getNome() + ", Idade: " + idade + " anos");
 
+        System.out.println("\nFuncionarios ordenados por ordem alfabetica:");
+        List<Funcionario> funcionariosOrdenados = funcionarios.stream()
+                .sorted(Comparator.comparing(Funcionario::getNome))
+                .collect(Collectors.toList());
+
+        for (Funcionario funcionario : funcionariosOrdenados) {
+            System.out.println(funcionario);
+        }
+
     }
 
 

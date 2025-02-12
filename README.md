@@ -23,7 +23,7 @@
     - [x] 3.6 Imprimir os funcionários agrupados por função.
     - [x] 3.8 Exibir funcionários com aniversário nos meses 10 e 12.
     - [x] 3.9 Identificar e imprimir o funcionário mais velho (nome e idade).
-    - [ ] 3.10 Ordenar e imprimir os funcionários em ordem alfabética.
+    - [x] 3.10 Ordenar e imprimir os funcionários em ordem alfabética.
     - [ ] 3.11 Calcular e imprimir o total dos salários dos funcionários.
     - [ ] 3.12 Calcular e exibir quantos salários mínimos cada funcionário recebe (considerando R$ 1212,00).
 
