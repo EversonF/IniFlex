@@ -38,12 +38,10 @@
 - Após concluir o desenvolvimento, exporte o projeto e compartilhe o link na etapa "Mão na Massa".
 - Após a entrega, será agendada uma entrevista técnica para avaliação.
 --------------------------------------------
-## 🔓  lincença
-**Este projeto está sob a licença do MIT.**
-
+### 🔓  lincença
+Este projeto está sob a licença do MIT.
 --------------------------------------------
-
-## 🛠 Tecnologias Ultizadas
+### 🛠 Tecnologias Ultizadas
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
 ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ_IDEA-000000?style=flat-square&logo=intellij-idea)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
